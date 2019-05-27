@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         RealmHelper helper = new RealmHelper(realm);
         month_name = helper.retrive();
 
-        //ArrayAdapter will set
+        // this ArrayAdapter will set previously added data to spinner
         adapter = new ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1, month_name);
         spinner.setAdapter(adapter);
 
